@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Welcome</title>
+</head>
+<body>
+<h1>User After Login: Home Page</h1>
+<a href="/logout">Logout</a>
+<br>
+<a href="http://localhost:8088/employees/list">Add Referral</a>
+<br>
+<a href="http://localhost:8081/employees/list">Register As customer</a>
+<br>
+<a href="http://localhost:8089/employees/list">Buying Details</a>
+
+
+
+<h1>Name : [[${user.fullName}]]</h1>
+<h1>Email : [[${user.email}]]</h1>
+<h1>Qualification : [[${user.qualification}]]</h1>
+<h1>Referral Code</h1>
+<p id="one"></p>
+<!--<button onclick="random()">Random</button>-->
+
+<script>
+  function random(){
+
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 123456789);
+  }
+  window.onload=random()
+
+</script>
+</body>
+</html>
